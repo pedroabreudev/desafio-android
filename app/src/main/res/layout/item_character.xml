@@ -48,7 +48,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivHeight"
             app:layout_constraintTop_toTopOf="@+id/ivHeight"
-            tools:text="179 cm" />
+            tools:text="182 cm" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivGender"
@@ -93,7 +93,7 @@
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivMass"
             app:layout_constraintTop_toTopOf="@+id/ivMass"
-            tools:text="70 kg" />
+            tools:text="77 kg" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

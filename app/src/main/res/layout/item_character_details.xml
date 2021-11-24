@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:backgroundTint="@android:color/transparent"
+    app:cardCornerRadius="5dp"
+    app:cardMaxElevation="2dp"
+    app:strokeColor="@color/white"
+    tools:backgroundTint="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvNameDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/yellow"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tvNameDetails"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Obi-Wan Kenobi" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivHeightDetails"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvNameDetails"
+            app:layout_constraintTop_toBottomOf="@+id/tvNameDetails"
+            app:srcCompat="@drawable/ic_height" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvHeightDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivHeightDetails"
+            app:layout_constraintTop_toTopOf="@+id/ivHeightDetails"
+            tools:text="182 cm" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGenderDetails"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ivHeightDetails"
+            app:layout_constraintTop_toBottomOf="@+id/ivHeightDetails"
+            app:srcCompat="@drawable/ic_masculine_feminine" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvGenderDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivGenderDetails"
+            app:layout_constraintTop_toTopOf="@+id/ivGenderDetails"
+            tools:text="Masculine" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMassDetails"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ivGenderDetails"
+            app:layout_constraintTop_toBottomOf="@+id/ivGenderDetails"
+            app:srcCompat="@drawable/ic_balance" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvMassDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivMassDetails"
+            app:layout_constraintTop_toTopOf="@+id/ivMassDetails"
+            tools:text="77 kg" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivHairColor"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ivMassDetails"
+            app:layout_constraintTop_toBottomOf="@+id/ivMassDetails"
+            app:srcCompat="@drawable/ic_hair_color" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvHairColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivHairColor"
+            app:layout_constraintTop_toTopOf="@+id/ivHairColor"
+            tools:text="Blond" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivSkinColor"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ivHairColor"
+            app:layout_constraintTop_toBottomOf="@+id/ivHairColor"
+            app:srcCompat="@drawable/ic_skin_color" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvSkinColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivSkinColor"
+            app:layout_constraintTop_toTopOf="@+id/ivSkinColor"
+            tools:text="Fair" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivEyeColor"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ivSkinColor"
+            app:layout_constraintTop_toBottomOf="@+id/ivSkinColor"
+            app:srcCompat="@drawable/ic_eye_color" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvEyeColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivEyeColor"
+            app:layout_constraintTop_toTopOf="@+id/ivEyeColor"
+            tools:text="Blue" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBirthYear"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ivEyeColor"
+            app:layout_constraintTop_toBottomOf="@+id/ivEyeColor"
+            app:srcCompat="@drawable/ic_birth_year" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvBirthYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivBirthYear"
+            app:layout_constraintTop_toTopOf="@+id/ivBirthYear"
+            tools:text="19 BBY" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

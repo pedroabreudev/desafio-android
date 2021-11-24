@@ -3,4 +3,8 @@
 
     <!--    Search Character Fragment -->
     <string name="search_hint">Pesquise um personagem</string>
+
+    <!--    Favorite Character Fragment -->
+    <string name="message_delete_character">Deletado com sucesso!</string>
+    <string name="tv_empty_text">Nada aqui.</string>
 </resources>

@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:backgroundTint="@color/black"
+    android:backgroundTint="@android:color/transparent"
     app:cardCornerRadius="5dp"
     app:cardMaxElevation="2dp"
-    app:strokeColor="@color/white">
+    app:strokeColor="@color/white"
+    tools:backgroundTint="@color/black">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

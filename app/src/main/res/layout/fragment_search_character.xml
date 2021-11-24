@@ -22,12 +22,12 @@
             android:id="@+id/edSearchCharacter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
             android:hint="@string/search_hint"
             android:inputType="textNoSuggestions"
             android:selectAllOnFocus="true"
             android:textColor="@color/yellow"
             android:textStyle="bold"
-            tools:backgroundTint="@color/black"
             tools:text="C3PO" />
 
     </com.google.android.material.textfield.TextInputLayout>

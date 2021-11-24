@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/listCharacterFragment">
 
     <fragment
         android:id="@+id/listCharacterFragment"
+        tools:layout="@layout/fragment_list_character"
         android:name="com.pedroabreudev.starwars.ui.list.ListCharacterFragment"
-        android:label="ListCharacterFragment" >
+        android:label="ListCharacterFragment">
         <action
             android:id="@+id/action_listCharacterFragment_to_detailsCharacterFragment"
             app:destination="@id/detailsCharacterFragment" />
@@ -16,7 +17,8 @@
     <fragment
         android:id="@+id/favoriteCharacterFragment"
         android:name="com.pedroabreudev.starwars.ui.favorite.FavoriteCharacterFragment"
-        android:label="FavoriteCharacterFragment" >
+        android:label="FavoriteCharacterFragment"
+        tools:layout="@layout/fragment_favorite_character">
         <action
             android:id="@+id/action_favoriteCharacterFragment_to_detailsCharacterFragment"
             app:destination="@id/detailsCharacterFragment" />
@@ -24,7 +26,8 @@
     <fragment
         android:id="@+id/searchCharacterFragment"
         android:name="com.pedroabreudev.starwars.ui.search.SearchCharacterFragment"
-        android:label="SearchCharacterFragment" >
+        android:label="SearchCharacterFragment"
+        tools:layout="@layout/fragment_search_character">
         <action
             android:id="@+id/action_searchCharacterFragment_to_detailsCharacterFragment"
             app:destination="@id/detailsCharacterFragment" />
@@ -32,5 +35,6 @@
     <fragment
         android:id="@+id/detailsCharacterFragment"
         android:name="com.pedroabreudev.starwars.ui.details.DetailsCharacterFragment"
-        android:label="DetailsCharacterFragment" />
+        android:label="DetailsCharacterFragment"
+        tools:layout="@layout/fragment_details_character"/>
 </navigation>

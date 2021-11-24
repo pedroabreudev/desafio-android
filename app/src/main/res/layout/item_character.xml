@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:backgroundTint="@android:color/transparent"
+    android:backgroundTint="@color/black"
     app:cardCornerRadius="5dp"
     app:cardMaxElevation="2dp"
     app:strokeColor="@color/white">
@@ -19,49 +19,80 @@
             android:id="@+id/tvName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginBottom="8dp"
+            android:maxLines="1"
             android:textColor="@color/yellow"
             android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tvName"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-
             tools:text="Obi-Wan Kenobi" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivHeight"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            app:srcCompat="@drawable/ic_height" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvHeight"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/tvName"
-            app:layout_constraintTop_toBottomOf="@+id/tvName"
-            tools:text="179 CM" />
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivHeight"
+            app:layout_constraintTop_toTopOf="@+id/ivHeight"
+            tools:text="179 cm" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivGender"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ivHeight"
+            app:layout_constraintTop_toBottomOf="@+id/ivHeight"
+            app:srcCompat="@drawable/ic_masculine_feminine" />
+
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvGender"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/tvHeight"
-            app:layout_constraintTop_toBottomOf="@+id/tvHeight"
-            app:layout_constraintBottom_toBottomOf="parent"
-            tools:text="Maculino" />
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivGender"
+            app:layout_constraintTop_toTopOf="@+id/ivGender"
+            tools:text="Masculine" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivMass"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/ivGender"
+            app:layout_constraintTop_toBottomOf="@+id/ivGender"
+            app:srcCompat="@drawable/ic_balance" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvMass"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
             android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="@+id/tvName"
-            app:layout_constraintTop_toBottomOf="@+id/tvName"
-            tools:text="70 KG" />
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/ivMass"
+            app:layout_constraintTop_toTopOf="@+id/ivMass"
+            tools:text="70 kg" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

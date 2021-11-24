@@ -7,4 +7,12 @@
     <!--    Favorite Character Fragment -->
     <string name="message_delete_character">Deletado com sucesso!</string>
     <string name="tv_empty_text">Nada aqui.</string>
+
+    <!--    Menu details -->
+    <string name="favorite">Favoritar</string>
+
+    <!--    Toast messages -->
+    <string name="an_error_occurred">Um erro ocorreu!</string>
+    <string name="saved_successfully">Salvo com sucesso!</string>
+
 </resources>

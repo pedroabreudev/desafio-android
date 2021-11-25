@@ -1,0 +1,11 @@
+package com.pedroabreudev.starwars.data.remote
+
+import com.pedroabreudev.starwars.data.model.character.CharacterModelData
+import retrofit2.Response
+import retrofit2.http.GET
+
+interface ServiceApi {
+
+    @GET("people")
+    suspend fun getPeople() : Response<CharacterModelData>
+}

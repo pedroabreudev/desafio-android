@@ -5,7 +5,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.pedroabreudev.starwars.databinding.FragmentDetailsCharacterBinding
 import com.pedroabreudev.starwars.ui.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DetailsCharacterFragment :
     BaseFragment<FragmentDetailsCharacterBinding, DetailsCharacterViewModel>() {
 

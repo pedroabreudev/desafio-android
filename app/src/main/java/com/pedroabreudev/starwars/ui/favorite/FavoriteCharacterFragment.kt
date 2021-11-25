@@ -5,7 +5,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.pedroabreudev.starwars.databinding.FragmentFavoriteCharacterBinding
 import com.pedroabreudev.starwars.ui.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FavoriteCharacterFragment :
     BaseFragment<FragmentFavoriteCharacterBinding, FavoriteCharacterViewModel>() {
 

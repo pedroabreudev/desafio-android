@@ -44,7 +44,7 @@ class SearchCharacterFragment :
     private fun searchInit(query: String) = with(binding) {
         edSearchCharacter.setText(query)
         edSearchCharacter.setOnEditorActionListener { _, actionId, _ ->
-            if (actionId == EditorInfo.IME_ACTION_GO) {
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
                 updateCharacterList()
                 true
             } else {

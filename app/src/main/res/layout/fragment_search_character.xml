@@ -24,11 +24,12 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/transparent"
             android:hint="@string/search_hint"
+            android:imeOptions="actionSearch"
             android:inputType="textNoSuggestions"
             android:selectAllOnFocus="true"
             android:textColor="@color/yellow"
             android:textStyle="bold"
-            tools:text="C3PO" />
+            tools:text="Han" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

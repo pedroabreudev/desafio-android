@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pedroabreudev.starwars.R
 import com.pedroabreudev.starwars.databinding.FragmentListCharacterBinding
@@ -29,6 +30,7 @@ class ListCharacterFragment : BaseFragment<FragmentListCharacterBinding, ListCha
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupRecyclerView()
+        clickAdapter()
         collectObserver()
 
     }
@@ -59,6 +61,13 @@ class ListCharacterFragment : BaseFragment<FragmentListCharacterBinding, ListCha
 
         }
 
+    }
+    private fun clickAdapter() {
+        characterAdapter.setOnClickListener { characterModel ->
+            val action = ListCharacterFragmentDirections
+                .actionListCharacterFragmentToDetailsCharacterFragment()
+            findNavController().navigate(action)
+        }
     }
 
 

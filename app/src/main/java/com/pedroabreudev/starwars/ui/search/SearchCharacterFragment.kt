@@ -110,7 +110,7 @@ class SearchCharacterFragment :
     private fun clickAdapter() {
         characterAdapter.setOnClickListener { characterModel ->
             val action = SearchCharacterFragmentDirections
-                .actionSearchCharacterFragmentToDetailsCharacterFragment()
+                .actionSearchCharacterFragmentToDetailsCharacterFragment(characterModel)
             findNavController().navigate(action)
         }
     }

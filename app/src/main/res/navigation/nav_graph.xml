@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/listCharacterFragment"
-        tools:layout="@layout/fragment_list_character"
         android:name="com.pedroabreudev.starwars.ui.list.ListCharacterFragment"
-        android:label="ListCharacterFragment">
+        android:label="ListCharacterFragment"
+        tools:layout="@layout/fragment_list_character">
         <action
             android:id="@+id/action_listCharacterFragment_to_detailsCharacterFragment"
             app:destination="@id/detailsCharacterFragment" />
@@ -36,5 +36,9 @@
         android:id="@+id/detailsCharacterFragment"
         android:name="com.pedroabreudev.starwars.ui.details.DetailsCharacterFragment"
         android:label="DetailsCharacterFragment"
-        tools:layout="@layout/fragment_details_character"/>
+        tools:layout="@layout/fragment_details_character">
+        <argument
+            android:name="character"
+            app:argType="com.pedroabreudev.starwars.data.model.character.CharacterModel" />
+    </fragment>
 </navigation>

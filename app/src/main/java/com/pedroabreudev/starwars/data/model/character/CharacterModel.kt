@@ -1,5 +1,7 @@
 package com.pedroabreudev.starwars.data.model.character
 
+import java.io.Serializable
+
 data class CharacterModel(
     val name: String,
     val height: String,
@@ -10,4 +12,4 @@ data class CharacterModel(
     val eye_color: String,
     val birth_year: String,
 
-)
+    ) : Serializable

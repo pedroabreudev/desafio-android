@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="2dp"
+    android:layout_margin="20dp"
     android:backgroundTint="@android:color/transparent"
     app:cardCornerRadius="5dp"
     app:cardMaxElevation="2dp"
@@ -13,16 +13,18 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_details"
+        android:alpha="0.7"
+        android:paddingTop="32dp"
+        android:padding="10dp">
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tvNameDetails"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:maxLines="1"
             android:textColor="@color/yellow"
-            android:textSize="24sp"
+            android:textSize="@dimen/title_details"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/tvNameDetails"
             app:layout_constraintEnd_toEndOf="parent"
@@ -31,9 +33,9 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivHeightDetails"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_width="@dimen/logo_details"
+            android:layout_height="@dimen/logo_details"
+            android:layout_marginTop="30dp"
             app:layout_constraintStart_toStartOf="@+id/tvNameDetails"
             app:layout_constraintTop_toBottomOf="@+id/tvNameDetails"
             app:srcCompat="@drawable/ic_height" />
@@ -44,7 +46,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_details"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivHeightDetails"
             app:layout_constraintTop_toTopOf="@+id/ivHeightDetails"
@@ -52,8 +54,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivGenderDetails"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="@dimen/logo_details"
+            android:layout_height="@dimen/logo_details"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/ivHeightDetails"
             app:layout_constraintTop_toBottomOf="@+id/ivHeightDetails"
@@ -67,7 +69,7 @@
             android:layout_marginStart="8dp"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_details"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivGenderDetails"
             app:layout_constraintTop_toTopOf="@+id/ivGenderDetails"
@@ -75,8 +77,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivMassDetails"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="@dimen/logo_details"
+            android:layout_height="@dimen/logo_details"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/ivGenderDetails"
             app:layout_constraintTop_toBottomOf="@+id/ivGenderDetails"
@@ -89,7 +91,7 @@
             android:layout_marginStart="8dp"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_details"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivMassDetails"
             app:layout_constraintTop_toTopOf="@+id/ivMassDetails"
@@ -97,8 +99,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivHairColor"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="@dimen/logo_details"
+            android:layout_height="@dimen/logo_details"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/ivMassDetails"
             app:layout_constraintTop_toBottomOf="@+id/ivMassDetails"
@@ -111,7 +113,7 @@
             android:layout_marginStart="8dp"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_details"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivHairColor"
             app:layout_constraintTop_toTopOf="@+id/ivHairColor"
@@ -119,8 +121,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivSkinColor"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="@dimen/logo_details"
+            android:layout_height="@dimen/logo_details"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/ivHairColor"
             app:layout_constraintTop_toBottomOf="@+id/ivHairColor"
@@ -133,7 +135,7 @@
             android:layout_marginStart="8dp"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_details"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivSkinColor"
             app:layout_constraintTop_toTopOf="@+id/ivSkinColor"
@@ -141,8 +143,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivEyeColor"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="@dimen/logo_details"
+            android:layout_height="@dimen/logo_details"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/ivSkinColor"
             app:layout_constraintTop_toBottomOf="@+id/ivSkinColor"
@@ -155,7 +157,7 @@
             android:layout_marginStart="8dp"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_details"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivEyeColor"
             app:layout_constraintTop_toTopOf="@+id/ivEyeColor"
@@ -163,8 +165,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/ivBirthYear"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="@dimen/logo_details"
+            android:layout_height="@dimen/logo_details"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toStartOf="@+id/ivEyeColor"
             app:layout_constraintTop_toBottomOf="@+id/ivEyeColor"
@@ -177,7 +179,7 @@
             android:layout_marginStart="8dp"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_details"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/ivBirthYear"
             app:layout_constraintTop_toTopOf="@+id/ivBirthYear"

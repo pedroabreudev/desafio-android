@@ -2,8 +2,10 @@ package com.pedroabreudev.starwars.ui.details
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.pedroabreudev.starwars.data.model.character.CharacterModel
 import com.pedroabreudev.starwars.data.model.character.CharacterModelData
 import com.pedroabreudev.starwars.data.remote.ServiceApi
+import com.pedroabreudev.starwars.repository.StarWarsRepository
 import com.pedroabreudev.starwars.ui.state.ResourceState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -15,7 +17,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class DetailsCharacterViewModel @Inject constructor(
-    private val repository: ServiceApi
+    private val repository: ServiceApi,
+    private val lrepository: StarWarsRepository
 ) : ViewModel() {
 
     private val _details =
@@ -50,5 +53,9 @@ class DetailsCharacterViewModel @Inject constructor(
             }
         }
         return ResourceState.Error(response.message())
+    }
+
+    fun insert(characterModel: CharacterModel) = viewModelScope.launch {
+        lrepository.insert(characterModel)
     }
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="title_details">60sp</dimen>
+    <dimen name="title_details">48sp</dimen>
     <dimen name="text_details">24sp</dimen>
     <dimen name="logo_details">40dp</dimen>
 
